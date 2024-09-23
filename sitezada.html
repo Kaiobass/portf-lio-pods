@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site de Pods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Preto */
+            color: #ffffff; /* Texto branco */
+        }
+        header {
+            background-color: #6a0dad; /* Roxo */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffffff; /* Texto branco */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: #1e1e1e; /* Cinza escuro */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #6a0dad; /* Roxo */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .portfolio-item {
+            margin-bottom: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #6a0dad; /* Roxo */
+            border-radius: 5px;
+            background-color: #282828; /* Cinza mais claro */
+            color: #ffffff; /* Texto branco */
+        }
+        input[type="submit"] {
+            background-color: #6a0dad; /* Roxo */
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #5b0a9c; /* Roxo mais escuro */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>EggPlant PODS</h1>
+    <nav>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section id="portfolio">
+    <h2>Portfólio</h2>
+    <div class="portfolio-item">
+        <h3>Pod Modelo 1</h3>
+        <p>Descrição do Pod Modelo 1. Este pod é ideal para...</p>
+    </div>
+    <div class="portfolio-item">
+        <h3>Pod Modelo 2</h3>
+        <p>Descrição do Pod Modelo 2. Este pod é perfeito para...</p>
+    </div>
+    <div class="portfolio-item">
+        <h3>Pod Modelo 3</h3>
+        <p>Descrição do Pod Modelo 3. Com características como...</p>
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <p>Para mais informações ou para fazer um pedido, entre em contato:</p>
+    <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Meu Site de Pods. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
